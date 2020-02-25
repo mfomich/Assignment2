@@ -1,13 +1,26 @@
+<!-- 
+HTML Main Page
+Run this instead of main		
+	
+-->
+
 <!DOCTYPE html>
-<html>
+<!-- Disable right click on the entire page -->
+<html oncontextmenu="return false;">
 <head>
     <meta charset="utf-8">
-    <title>Simulation</title>
+    <title>Test Engine</title>
     <script type="text/javascript" src="./gameengine.js"></script>
     <script type="text/javascript" src="./assetmanager.js"></script>
     <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript">
+        // Auto focus canvas when the page finishes loading
+        window.addEventListener('load', function () {
+            document.getElementById("gameWorld").focus();
+        });
+    </script>
 </head>
 <body>
-    <canvas id="gameWorld" tabindex="1" width="800" height="800" style="border: 1px solid rgb(0, 255, 0); background: lightskyblue"></canvas>
+    <canvas id="gameWorld" tabindex="1" width="1000" height="750" style="border: 1px solid rgb(0, 0, 0); background: rgb(0, 128, 192)"></canvas>
 </body>
-</html>
+</html> 
